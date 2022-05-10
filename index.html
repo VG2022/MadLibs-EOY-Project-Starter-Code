@@ -4046,15 +4046,15 @@
 });</script><style>h1 {
     text-align: center;
     font-family: 'Shizuru', cursive;
-    
+
 }
 
 .story {
     border: 2px solid #000;
     border-radius: 30px;
     padding: 10px;
-    background-color:yellow;
-    font-size:40px;
+    background-color: yellow;
+    font-size: 40px;
     font-family: 'Akaya Telivigala', cursive;
 }
 
@@ -4063,9 +4063,9 @@
     border-radius: 30px;
     padding: 10px;
     margin: 5px;
-    background-color:yellow;
-font-family: 'Akaya Telivigala', cursive;
-    font-size:16px;
+    background-color: yellow;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 16px;
 }
 
 .stories-ticker {
@@ -4073,24 +4073,23 @@ font-family: 'Akaya Telivigala', cursive;
     justify-content: flex-end;
 }
 
-body{
+body {
     background-image: url("https://i.pinimg.com/originals/76/42/54/764254bb27d000114d78204ffddab05e.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
-h2{
+h2 {
     font-family: 'Shizuru', cursive;
 }
 
-button{
+button {
     font-family: 'Akaya Telivigala', cursive;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-    font-size:18px;
-}
-</style></head>
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}</style></head>
     <body>
         <div class="stories-ticker">
             <h2>Stories Created:<span class="count"></span></h2>
@@ -4108,12 +4107,14 @@ button{
     
 <script>
 /*__POPCODESTART__*/
-var storiesCreated;
+var storiesCreated = 0;
 $(".submit").click(function () {
+  storiesCreated = storiesCreated + 1;
+  $(".count").text(storiesCreated);
   var name = $(".name-input").val();
   var transport = $(".transport-input").val();
   var adjective = $(".adjective-input").val();
   var time = $(".number-input").val();
   $(".story").append("<p>" + " One day my friend " + name + " and I decided to take a trip to the beach, so we packed our bags and took the " + transport + " over. It was a " + adjective + " day at the beach! We ended up staying for " + time + " hours!" + "</p>");
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbInN0b3JpZXNDcmVhdGVkIiwiJCIsImNsaWNrIiwibmFtZSIsInZhbCIsInRyYW5zcG9ydCIsImFkamVjdGl2ZSIsInRpbWUiLCJhcHBlbmQiXSwibWFwcGluZ3MiOiJBQUFBLElBQUlBLGNBQUo7QUFDQUMsQ0FBQyxDQUFDLFNBQUQsQ0FBRCxDQUFhQyxLQUFiLENBQW9CLFlBQVU7QUFDMUIsTUFBSUMsSUFBSSxHQUFHRixDQUFDLENBQUMsYUFBRCxDQUFELENBQWlCRyxHQUFqQixFQUFYO0FBQ0MsTUFBSUMsU0FBUyxHQUFHSixDQUFDLENBQUMsa0JBQUQsQ0FBRCxDQUFzQkcsR0FBdEIsRUFBaEI7QUFDQSxNQUFJRSxTQUFTLEdBQUdMLENBQUMsQ0FBQyxrQkFBRCxDQUFELENBQXNCRyxHQUF0QixFQUFoQjtBQUNBLE1BQUlHLElBQUksR0FBR04sQ0FBQyxDQUFDLGVBQUQsQ0FBRCxDQUFtQkcsR0FBbkIsRUFBWDtBQUVESCxFQUFBQSxDQUFDLENBQUMsUUFBRCxDQUFELENBQVlPLE1BQVosQ0FBb0IsUUFBUSxxQkFBUixHQUFnQ0wsSUFBaEMsR0FBdUMsaUZBQXZDLEdBQTJIRSxTQUEzSCxHQUF1SSxrQkFBdkksR0FBNEpDLFNBQTVKLEdBQXdLLDZDQUF4SyxHQUF3TkMsSUFBeE4sR0FBK04sU0FBL04sR0FBMk8sTUFBL1A7QUFDSCxDQVBEIiwic291cmNlc0NvbnRlbnQiOlsibGV0IHN0b3JpZXNDcmVhdGVkO1xuJChcIi5zdWJtaXRcIikuY2xpY2sgKGZ1bmN0aW9uKCl7XG4gICAgbGV0IG5hbWUgPSAkKFwiLm5hbWUtaW5wdXRcIikudmFsKCk7XG4gICAgIGxldCB0cmFuc3BvcnQgPSAkKFwiLnRyYW5zcG9ydC1pbnB1dFwiKS52YWwoKTsgXG4gICAgIGxldCBhZGplY3RpdmUgPSAkKFwiLmFkamVjdGl2ZS1pbnB1dFwiKS52YWwoKTsgXG4gICAgIGxldCB0aW1lID0gJChcIi5udW1iZXItaW5wdXRcIikudmFsKCk7IFxuICAgIFxuICAgICQoXCIuc3RvcnlcIikuYXBwZW5kIChcIjxwPlwiICsgXCIgT25lIGRheSBteSBmcmllbmQgXCIgKyBuYW1lICsgXCIgYW5kIEkgZGVjaWRlZCB0byB0YWtlIGEgdHJpcCB0byB0aGUgYmVhY2gsIHNvIHdlIHBhY2tlZCBvdXIgYmFncyBhbmQgdG9vayB0aGUgXCIgKyB0cmFuc3BvcnQgKyBcIiBvdmVyLiBJdCB3YXMgYSBcIiArIGFkamVjdGl2ZSArIFwiIGRheSBhdCB0aGUgYmVhY2ghIFdlIGVuZGVkIHVwIHN0YXlpbmcgZm9yIFwiICsgdGltZSArIFwiIGhvdXJzIVwiICsgXCI8L3A+XCIpO1xufSk7Il19</script></body></html>
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbInN0b3JpZXNDcmVhdGVkIiwiJCIsImNsaWNrIiwidGV4dCIsIm5hbWUiLCJ2YWwiLCJ0cmFuc3BvcnQiLCJhZGplY3RpdmUiLCJ0aW1lIiwiYXBwZW5kIl0sIm1hcHBpbmdzIjoiQUFBQSxJQUFJQSxjQUFjLEdBQUcsQ0FBckI7QUFDQUMsQ0FBQyxDQUFDLFNBQUQsQ0FBRCxDQUFhQyxLQUFiLENBQW1CLFlBQVc7QUFDMUJGLEVBQUFBLGNBQWMsR0FBR0EsY0FBYyxHQUFHLENBQWxDO0FBQ0FDLEVBQUFBLENBQUMsQ0FBQyxRQUFELENBQUQsQ0FBWUUsSUFBWixDQUFpQkgsY0FBakI7QUFHQSxNQUFJSSxJQUFJLEdBQUdILENBQUMsQ0FBQyxhQUFELENBQUQsQ0FBaUJJLEdBQWpCLEVBQVg7QUFDQSxNQUFJQyxTQUFTLEdBQUdMLENBQUMsQ0FBQyxrQkFBRCxDQUFELENBQXNCSSxHQUF0QixFQUFoQjtBQUNBLE1BQUlFLFNBQVMsR0FBR04sQ0FBQyxDQUFDLGtCQUFELENBQUQsQ0FBc0JJLEdBQXRCLEVBQWhCO0FBQ0EsTUFBSUcsSUFBSSxHQUFHUCxDQUFDLENBQUMsZUFBRCxDQUFELENBQW1CSSxHQUFuQixFQUFYO0FBRUFKLEVBQUFBLENBQUMsQ0FBQyxRQUFELENBQUQsQ0FBWVEsTUFBWixDQUFtQixRQUFRLHFCQUFSLEdBQWdDTCxJQUFoQyxHQUF1QyxpRkFBdkMsR0FBMkhFLFNBQTNILEdBQXVJLGtCQUF2SSxHQUE0SkMsU0FBNUosR0FBd0ssNkNBQXhLLEdBQXdOQyxJQUF4TixHQUErTixTQUEvTixHQUEyTyxNQUE5UDtBQUNILENBWEQiLCJzb3VyY2VzQ29udGVudCI6WyJsZXQgc3Rvcmllc0NyZWF0ZWQgPSAwO1xuJChcIi5zdWJtaXRcIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgc3Rvcmllc0NyZWF0ZWQgPSBzdG9yaWVzQ3JlYXRlZCArIDE7XG4gICAgJChcIi5jb3VudFwiKS50ZXh0KHN0b3JpZXNDcmVhdGVkKTtcblxuXG4gICAgbGV0IG5hbWUgPSAkKFwiLm5hbWUtaW5wdXRcIikudmFsKCk7XG4gICAgbGV0IHRyYW5zcG9ydCA9ICQoXCIudHJhbnNwb3J0LWlucHV0XCIpLnZhbCgpO1xuICAgIGxldCBhZGplY3RpdmUgPSAkKFwiLmFkamVjdGl2ZS1pbnB1dFwiKS52YWwoKTtcbiAgICBsZXQgdGltZSA9ICQoXCIubnVtYmVyLWlucHV0XCIpLnZhbCgpO1xuXG4gICAgJChcIi5zdG9yeVwiKS5hcHBlbmQoXCI8cD5cIiArIFwiIE9uZSBkYXkgbXkgZnJpZW5kIFwiICsgbmFtZSArIFwiIGFuZCBJIGRlY2lkZWQgdG8gdGFrZSBhIHRyaXAgdG8gdGhlIGJlYWNoLCBzbyB3ZSBwYWNrZWQgb3VyIGJhZ3MgYW5kIHRvb2sgdGhlIFwiICsgdHJhbnNwb3J0ICsgXCIgb3Zlci4gSXQgd2FzIGEgXCIgKyBhZGplY3RpdmUgKyBcIiBkYXkgYXQgdGhlIGJlYWNoISBXZSBlbmRlZCB1cCBzdGF5aW5nIGZvciBcIiArIHRpbWUgKyBcIiBob3VycyFcIiArIFwiPC9wPlwiKTtcbn0pOyJdfQ==</script></body></html>
